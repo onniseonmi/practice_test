@@ -1,11 +1,11 @@
 import "./App.css";
-import react from "react";
+import React from "react";
 import Nav from "./components/Nav";
 import CocktalList from "./pages/CocktalList";
 import Community from "./pages/Community";
 import Mainpage from "./pages/Mainpage";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-
+import Login from "./components/Login";
 function App() {
   return (
     <Router>
@@ -21,6 +21,7 @@ function App() {
           <Community />
         </Route>
       </Switch>
+      <Login />
     </Router>
   );
 }
